@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signup-container">
+        <form class="signup-form" id="signupForm">
+            <h2>Create Account</h2>
+
+            <div class="input-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" placeholder="Toyib" required />
+            </div>
+
+            <div class="input-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" placeholder="Ayomide" required />
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="toyib@example.com" required />
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="pass-toggle">
+                    <input type="password" id="password" placeholder="Enter password" required />
+                    <button type="button" id="togglePassword">🙈</button>
+                </div>
+            
+
+                <ul class="password-hints" id="passwordHints">
+                    <li id="length">🔴 At least 6 characters</li>
+                    <li id="upperCase">🔴 Uppercase letter</li>
+                    <li id="lowerCase">🔴 Lowercase letter</li>
+                    <li id="number">🔴 Number</li>
+                    <li id="specialCase">🔴 Special character (!@#$...)</li>
+                </ul>
+            </div>
+
+            <button type="submit">Sign Up</button>
+            <p class="message">Already have an account? <a href="../Sign-up page/login.html">Log in</a> Instead </p>
+        </form>
+    </div>
+
+    <!-- Popup Container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-message"></span>
+            <div class="popup-timer"></div>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
